@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="user" placeholder="enter data"> -->
+    <!-- <button onclick="printData()">ADD</button> -->
+    <!-- <ul id="ulist">
+    </ul> -->
+    <input type="text" onkeypress="data(event)">
+    <div id="a"></div>
+    <script>
+        // function printData(){
+        //     let a=document.getElementById("user")
+        //     console.log(a.value)
+        //     let b=document.getElementById("ulist")
+        //     let c=document.createElement("li")
+        //     console.log(c)
+        //     c.innerHTML=`${a.value}`
+        //     //appendChild() - it is used to merge parent element and child element
+        //     b.appendChild(c)
+        //     a.value=""
+        // }
+        function data(e){
+            if (e.code == "Enter"){
+                let a = e.target
+                console.log(a.value)
+                let b=document.getElementById("a")
+                let c=document.createElement("h1")
+                c.innerHTML=`${a.value}`
+                console.log(c)
+                b.appendChild(c)
+                a.value=""
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

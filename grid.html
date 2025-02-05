@@ -1,0 +1,94 @@
+<!--Grid.....which is used to create multiple
+ row wise and column wise aignments....multiline dimensional way-->
+ <!--Fle....single wise dimensional way-->
+
+ <html>
+    <head>
+        <style>
+            /* *{
+                margin:0px;
+            } */
+            div p{
+                background-color: aqua;
+                padding:40px;
+            }
+            div{
+                display:grid;
+                /* grid-template-columns: auto auto auto auto;  for eqaul occupying*/
+                grid-template-columns: 20% 60% 20%;
+                /* grid-row-gap:20px;
+                grid-column-gap:20px; */
+                grid-gap:20px;
+            }
+            #para1{
+                 grid-column: 2 span;  /*to occupy heading heading 4 */
+            }
+            #para2{
+                grid-column: 2 span;
+            }
+            #para3{
+                grid-row:2 span;
+            }
+            main section{
+                background-color: rgb(202, 154, 154);
+                padding:10px;
+                text-align: center;
+                /* border:2px solid red
+                 */
+                 border-left:2px solid red;
+                 box-shadow: 5px 5px 10px black;
+                 border-radius: 50px;
+            }
+            main{
+                display:grid;
+                grid-template-columns:auto auto auto;
+                grid-gap:20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="para1">Heading 1</p>
+            <p id="para2">Heading 2</p>
+            <p id="para3">Heading 3</p>
+            <p>Heading 4</p>
+            <p>Heading 5</p>
+            <p>Heading 6</p>
+            <p>Heading 7</p>
+            <p>Heading 8</p>
+        </div>
+        <main>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+            <section>
+                <img src="img1.jpg" height="200px" width="200px">
+                <h2>Html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab deleniti temporibus, vero consequatur ad recusandae.</p>
+            </section>
+        </main>
+    </body>
+ </html>

@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/073f66530f.js"
+        crossorigin="anonymous"></script>
+        <style>
+            .main1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+            }
+            div h4:hover{
+                color:red
+            }
+            .main2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: aquamarine;
+                padding: 20px;
+            }
+            div article{
+                padding-top: 18px;
+                color: black;
+                padding-left: 50px;
+            }
+            div article a{
+                font-size: 23px;
+                padding:20px;
+            }
+            div article a:hover{
+                background-color: white;
+                padding:20px;
+                color: red;
+            }
+            @media (max-width: 768px) {
+                .main1, .main2 {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .main1 div, .main2 div {
+                    text-align: center;
+                }
+                .main1 h4, .main2 aside, .main2 article {
+                    padding: 10px 0;
+                }
+                .main2 article a {
+                    display: block;
+                    padding: 10px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <marquee behavior="alternate" direction="right" style="background-color: orange;">
+            <p>Our best Offer Ever!! Summer Special-Get 3 Courses at 22499/-Only <a href="">Read More</a></p>
+        </marquee>
+        <div class="main1">
+            <h4 style="padding-left: 20px;">Email: rjtechnology@gmail.com</h4>
+            <h4>Contact: +91 9025741101</h4>
+            <div style="color: white;padding-top:23px;padding-left:580px;">
+                <a href="https://www.facebook.com/" style="padding-right: 40px;color:white;"><i class="fa-brands fa-square-facebook" style="font-size: 20px;"></i></a>
+                <a href="https://x.com/i/flow/login" style="padding-right: 40px; color: white;"><i class="fa-brands fa-twitter"  style="font-size: 20px;"></i></a>
+                <a href="https://www.instagram.com/" style="padding-right: 40px;color: white;"><i class="fa-brands fa-square-instagram"  style="font-size: 20px;"></i></a>
+                <a href="https://in.linkedin.com/" style="color: white;"><i class="fa-brands fa-linkedin"  style="font-size: 20px;"></i></a>
+            </div>
+        </div>
+        <div class="main2">
+            <aside>
+                <i class="fa-solid fa-graduation-cap" style="font-size: 40px;padding-left: 10px;color: rgb(2, 103, 69);"></i><small style="color: rgb(2, 103, 69);padding-left: 10px;font-size: 25px;font-family: 'Times New Roman', Times, serif;">RJ Technology</small>
+            </aside>
+            <div>
+                <article>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="online_training.html">Online Training</a>
+                    <a href="contact.html">Contact</a>
+                </article>
+            </div>
+            <article>
+                <aside>
+                    <button style="background-color: rgb(6, 222, 150);border-radius: 15px;padding: 10px;border-color: aquamarine;"><strong style="font-size: 20px;color: white;">Enquairy</strong></button>
+                </aside>
+            </article>
+        </div>
+    </body>
+</html>

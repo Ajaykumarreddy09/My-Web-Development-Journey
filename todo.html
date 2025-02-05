@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            .main1{
+                background-color: rgb(8, 8, 62);
+                height: 100%;
+                width: 100%;
+            }
+            div h1{
+                background-color: white;
+                width: 100%;
+                color: blue;
+                text-align: center;
+                position: absolute;
+                top: 120px;
+                
+            }
+            .main2{
+                height: 400px;
+                width: 450px;
+                background-color: white;
+                position: absolute;
+                top: 200px;
+                left: 500px;
+                border-radius: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main1">
+            <h1>Todo List using javascript</h1>
+            <div class="main2">
+                <input type="text" id="inputTask" name="inputTask" style="position: absolute;top: 20px;height: 30px; width: 70%;left: 20px;border-radius: 5px;border: 2px solid blue;">
+                <button style="position: absolute;top:20px;height: 30px;width: 60px;left: 350px;background-color: blue;color: white;border-radius: 5px;" onclick="addtask()">Add</button>
+                <ul id="tasklist" class="taskList"></ul>
+
+            </div>
+        </div>
+        <script>
+            function readData(){
+                let inputdata={}
+                inputdata["data"]=document.getElementById("inputTask").value
+                return inputdata
+            }
+            function getData(data){
+                let tasksdata=tasksdata.document.getElementsByTagNames("ul")
+                let row=tasksdata.insertRow(tasksdata.length)
+
+                cell1=row.insertRow()
+                cell1.innerHTML=data.inputTask
+            }
+        </script>
+    </body>
+</html>

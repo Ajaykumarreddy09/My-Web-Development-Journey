@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th,td{
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <h1 style="text-align: center;">CRUD OPERATIONS</h1>
+      <form style="text-align: center;" onsubmit="submitData()">
+        <label>Name:</label>
+        <input type="text" required name="name" id="name"><br><br>
+        <label>Email:</label>
+        <input type="email" required name="email" id="email"><br><br>
+        <label>Mobile:</label>
+        <input type="number" required name="mobile" id="mobile"><br><br>
+        <input type="submit">
+      </form>
+      <center>
+        <table style="text-align: center;" >
+            <h1 style="text-align: center;">Employee Data</h1>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="details">
+            </tbody>
+      </center>
+      </table>
+        <script>
+            function adddata(){
+                let obj={}
+                obj["name"]=document.getElementById("name").value
+                obj["email"]=document.getElementById("email").value
+                obj["mobile"]=document.getElementById("mobile").value
+                return obj
+            }
+            function createtable(data){
+                let tbl=document.getElementsByTagName("tbody")[0]
+                let row=tbl.insertRow(tbl.rowindex)
+                row.insertCell(0).innerHTML=data.name
+                row.insertCell(1).innerHTML=data.email
+                row.insertCell(2).innerHTML=data.mobile
+                row.insertCell(3).innerHTML=`<button onclick="sendData(this)" class="btn-btn info">Edit</button><button class="btn btn-danger" onclick="DeleteData(this)">Delete</button>`
+
+            }
+            row=null
+            function submitData(){
+                event.preventDefault()
+                let x=adddata()
+                if (row==null){
+                    createtable(x)
+                }
+                else{
+                    updateData(x)
+                }
+                
+                resetData()
+            }
+            function resetData(){
+                document.getElementById("name").value=""
+                document.getElementById("email").value=""
+                document.getElementById("mobile").value=""
+            }
+            function updateData(data){
+                row.cells[0]=data.name
+                row.cells[1]=data.email
+                row.cells[2]=data.mobile
+            }
+            function DeleteData(t){
+                row=t.parentElement.parentElement
+                document.getElementById("details").deleteRow(row.rowindex)
+            }
+
+            function sendData(t){
+                row=t.parentElement.parentElement
+                document.getElementById("name").value=row.cells[0].innerHTML
+                document.getElementById("email").value=row.cells[1].innerHTML
+                document.getElementById("mobile").value=row.cells[2].innerHTML
+            }
+        </script>
+    </body>
+</html>

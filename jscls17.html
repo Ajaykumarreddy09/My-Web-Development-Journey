@@ -1,0 +1,109 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- <button id="x">login</button> -->
+         <div id="parent">
+            <button id="child">click</button>
+         </div>
+        <script>
+            //Event listners
+            //1.addEventlistners("event",function or function_name)
+            //2.RemoveEventlistners("event",function or function_name)
+
+            // let a=document.getElementById("x")
+            // a.addEventListener("click",data)
+            // function data(){
+            //     alert(Date())
+            // }
+            // a.removeEventListener("click",data)
+
+            //Event propagation--> order of executing code or way of execution code
+            //event bubbling --> first parent then child
+            //event capturing -->first child then parent
+
+            //Event capturing
+            // let a=document.getElementById("child")
+            // a.addEventListener("click",()=>{
+            //     alert("iam child")
+            // })
+            // let b=document.addEventListener("click",()=>{
+            //     alert("iam parent")
+            // })
+
+            //event bubbling
+            // let c=document.getElementById("child")
+            // c.addEventListener("click",()=>{
+            //     alert("iam child")
+            // },true)
+            // let d=document.addEventListener("click",()=>{
+            //     alert("iam parent")
+            // },true)
+
+            //Regular Expressions
+            //3 types
+            //1.Quantify operators
+            //2.Group operators
+            //3.escape operators
+
+            //1.Quantify operator:--> we are having *,+,?
+            // when its "+"-->min =1 and max = infinity
+            //when its "*"--> min=0 and max=infinity
+            //in "?"--> min=0 and max=1
+
+            //2.Group operator --> denoted with --> []
+            //w+ -->words
+            //d -->digits
+
+            //3.escape operator 
+            //---> / escape operator
+
+            //syntax
+
+            //  /^patterns$/
+
+            // let pattern=/^a+$/
+            // let input="aaaa"
+            // //test()--> used to check the pattern
+            // let res=pattern.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-z]+$/
+            // let input="jsnxajhcuwew"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-z][A-Z]+$/
+            // let input="SJBWdbd"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-zA-Z]+$/
+            // let input="SJBWdbd"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-zA-Z!@#$%^&*()]+$/
+            // let input="SJBWdbd@"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-zA-Z-!@#$%^&*()]+$/
+            // let input="SJB@Wdbd"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-z-A-Z]+[!@#$%^&*()]+$/
+            // let input="SJBWdbd@"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            // let p1=/^[a-zA-Z]+[!@#$%^&*()]+$/
+            // let input="SJB$Wdbd"
+            // let res=p1.test(input)
+            // console.log(res)
+
+            
+        </script>
+    </body>
+</html>

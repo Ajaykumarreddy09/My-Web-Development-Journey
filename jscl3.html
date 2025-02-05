@@ -1,0 +1,344 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //datatypes: 2 types--primitive and non primitive
+            //1.primitive:
+            //1.string
+            //2.number
+            //3.boolean
+            //4.undefined 
+            //5.null
+
+            //Non primitive data
+            //1.array
+            //2.object
+
+            //Operators:--are the symbols which is used to make mathematical or logical operations
+            //1.Arithmatic operators
+            //Symbols----+,-,*,/
+            // let a=10
+            // let b=20
+            // let c=a+b
+            // console.log(c)
+
+            // let a=10
+            // let b=20
+            // let c=a*b
+            // console.log(c)
+
+            //2.Comparision operators--used to compare the 2 values.
+            //Symbols:---  <,<=,>,>=,!=,==,===
+            // let a=100
+            // let b=200
+            // let r=a>b
+            // console.log(r)//we will get the o/p as true or false.
+
+            // let a=10
+            // let b=20
+            // let c=a>=b
+            // console.log(c)
+
+            // let a=10
+            // let b=20
+            // let c=a<b
+            // console.log(c)
+
+            // let a=10
+            // let b=20
+            // let c=a<=b
+            // console.log(c)
+
+            // let a=10
+            // let b=20
+            // let c=a!=b
+            // console.log(c)
+
+            //==  --- which is used to compare the values only
+
+
+
+            //===  -- which is used to compare the values as well checking datatypes as well data
+            // let a=100
+            // let b="100"
+            // let c=a=="100"
+            // console.log(c) //true
+
+            // let a=100
+            // let b="300"
+            // let c=a=="300"
+            // console.log(c)  //false
+
+            // let a=300
+            // let b="300"
+            // let c=a===b
+            // console.log(c)  //false
+
+            // let a="300"
+            // let b="300"
+            // let c=a=="300"
+            // console.log(c)  //true
+
+
+            //3.Logical operators--used to make some logical operations
+            //Symbols--&&--And , ||--OR
+            //&&--when both operators are true then only condition is true
+            // let a=300
+            // let b=500
+            // let c=a=="300" && b==500
+            // console.log(c) //true
+
+            // let a=300
+            // let b=500
+            // let c=a=="300" && b==a
+            // console.log(c)   //false
+
+
+            //||--any one operator is true then the entire condition becomes true 
+
+            // let a=300
+            // let b=500
+            // let c=a=="300" || b==a
+            // console.log(c)  //true
+
+            // let a=300
+            // let b=500
+            // let c=a==="300" || b==a
+            // console.log(c)  //false
+
+
+
+            
+            //4.Ternary operators.
+            //True: False
+            //used to make single line conditions true or false
+            // let a=20
+            // let b=30
+            // let c=a>=b? true:false
+            // console.log(c)  //false
+
+            // let a=20
+            // let b=30
+            // let c=b==30? true:false
+            // console.log(c)   //true
+
+
+            //Conditions
+            //3 types of conditions
+            //if -- condition with statement
+
+            //else if--condition with statement
+
+
+            //else--default statement
+
+
+            //Syntax
+
+            // if(condition){
+            //     //statement
+            // }
+            // else if(condition){
+            //     //statement
+            // }
+            // else{
+            //     //statement
+            // }
+
+            // let a=30
+            // let b=40
+            // if(a>b){
+            //     console.log("Pass")
+            // }
+            // else if(b>=20){
+            //     console.log("Fail")
+            // }
+            // else{
+            //     console.log("Default")
+            // }
+
+            // let a=30
+            // let b=40
+            // if(a<=b){
+            //     console.log("Pass")
+            // }
+            // else if(b>=20){
+            //     console.log("Fail")
+            // }
+            // else{
+            //     console.log("Default")
+            // }
+
+            // let a=30
+            // let b=40
+            // if(a<=b || b=="400"){
+            //     console.log("Pass")
+            // }
+            // else if(b>=20){
+            //     console.log("Fail")
+            // }
+            // else{
+            //     console.log("Default")
+            // }
+
+            //Loops --  used to iterate the value or statemet will be executed repeatedly untill it react the condition true or false
+
+            //for loop
+            //syntax
+
+            // for(initial value;condition;step++,--){
+            //     statement
+            // }
+
+            //0 to 30
+
+            // for(let i=0;i<=30;i++){
+            //     console.log(i)
+            // }
+
+            // for even nums 
+
+
+            // for(let i=0;i<=30;i++){
+            //     if (i%2==0){
+            //         console.log(i)
+            //     }
+            // }
+
+
+        //    let arr=[1,2,3,4,5,6,7,8,9,0,10,11,12,13,14,15,16,17]
+        //    for (let i=0;i<=arr.length;i++){
+        //     if (arr[i]%2==0){
+        //         console.log(arr[i])
+        //     }
+        //    }
+
+
+            //while loop
+
+            //syntax
+
+            // initial value;
+            // while(condition){
+            //     //statement
+            //     //step
+            // }
+
+            // let i=0
+            // while(i<=10){
+            //     console.log(i)/
+            //     i++
+            // }
+
+            // let arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+            // let i=0;
+            // while(i<=arr.length){
+            //     console.log(i)
+            //     i++
+            // }
+
+            // let a="Hello we are learning javascript"
+            // let i=0;
+            // while(i<a.length){
+            //     console.log(a[i])
+            //     i++
+            // }
+
+
+            //Do while loop
+
+            //syntax
+
+            // initial value;
+            // do{
+            //     statement
+            //     step
+            // }
+            // while(condition)
+
+
+            // let a=["Ajay","vijay","vinay","waseem","nawaz"]
+            // let i=0;
+            // do{
+            //     console.log(a[i])
+            //     i++
+            // }
+            // while(i<a.length)
+
+            // let i=70;
+            // do{
+            //     console.log(i)
+            //     i--
+            // }
+            // while(i>=0)
+            //for of loop
+            //for in loop
+
+
+
+            // for(let i=0;i<=30;i++){
+            //     if(i==25){
+            //         break;
+            //     }
+            //     console.log(i)
+            // }
+
+
+            //  for(let i=0;i<=30;i++){
+            //     if(i==25 || i==10 || i==29){
+            //         continue;
+            //     }
+            //     console.log(i)
+            // }
+
+
+
+            //for of loop
+
+            //for(let i of condition){
+                //  statement
+                // }
+
+            // let a="javascript"
+            // for(let i of a){
+            //     console.log(i)
+            // }
+
+
+            // let a="javascript"
+            // let vowels=["a","e","i","o","u"]
+            // for(let i of a){
+            //     if(vowels.includes(i)){
+            //         console.log(i)
+            //     }
+            // }
+
+            // let a="javascript"
+            // let vowels=["a","e","i","o","u"]
+            // for(let i=0;i<=a.length;i++){
+            //     if(vowels.includes(a[i])){
+            //         console.log(a[i])
+            //     }
+            // }
+
+            //for in loop
+            //object ---- for in
+
+            //syntax
+
+            //for(let i in obj){
+                 //statement}
+
+
+            // let obj={
+            //     name:"Ajay",
+            //     age:21,
+            //     city:"Banglore",
+            //     state:"KA"
+            // }
+            // for(i in obj){
+            //     console.log(i+":"+obj[i])
+            // }
+        </script>
+    </body>
+</html>

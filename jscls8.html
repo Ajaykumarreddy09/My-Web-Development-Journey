@@ -1,0 +1,70 @@
+<html>
+    <head></head>
+    <body>
+
+
+        <button onclick="myAlert()">Alert</button>
+        <button ondblclick="myadd()">Add</button>
+        <button onmouseover="myupdate()">Update</button>    
+        <button onmouseout="mydelete()">Delete</button>
+        <button onkeypress="myshow()">Show</button>
+        <h1 id="data">Hello<span id="myid"></span></h1>
+
+        <input type="text" id="user" onkeyup="myinput()"><button>click</button>
+        <br><br>
+        <span  id="data1"></span>
+
+
+
+
+
+        <script>
+            //onclick()
+            //ondblclick()--
+
+            
+            function myadd(){
+                let x=document.getElementById("myid").innerHTML="Besant tech"
+                let a=document.getElementById("myid")
+                a.style.color="red"
+            }
+            function myAlert(){
+                alert("Hello....")
+            }
+
+            // function myupdate(){
+            //     let b=document.getElementById("myid").innerHTML="Ajay"
+            //     let y=document.getElementById("myid")
+            //     y.style.color="blue"
+            // }
+            function myupdate(){
+                let b=document.getElementById("myid").innerHTML="Ajay"
+                let y=document.getElementById("data")
+                y.style.color="blue"
+            }
+
+            function mydelete(){
+                let x=document.getElementById("data")
+                x.style.display="none"
+            }
+            function myshow(){
+                let x=document.getElementById("data")
+                x.style.display="block"
+
+            }
+
+            function myinput(){
+                let a=document.getElementById("user").value
+                let b=document.getElementById("data1").innerHTML=a
+            }
+            //onmouseover()----when cursor is moving to the button then action should be executed.
+
+            //onmouse out()---when cursor moves out of the button then only action is executed.
+
+            //onkeypress()--- on clicking the enter button action will be executed
+
+            //onkeyup()----
+
+        </script>
+    </body>
+</html>

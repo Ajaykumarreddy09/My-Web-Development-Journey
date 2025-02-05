@@ -1,0 +1,102 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Form - Validation</h1>
+
+        <form onsubmit="formSubmit()">
+            <label>FullName:</label>
+            <input type="text" id="name"><br><br>
+            <label>EmailId:</label>
+            <input type="email" id="email"><br><br>
+            <label>password</label>
+            <input type="password" id="pswd"><br><br>
+            <label>confirm password:</label>
+            <input type="password" id="cpswd"><br><br>
+            <input type="Submit">
+        </form>
+        <script>
+            
+            function formSubmit(){
+                let fullName=document.getElementById("name").value
+                let emailId=document.getElementById("email").value
+                let password=document.getElementById("pswd").value
+                let cpassword=document.getElementById("cpswd").value
+
+                if(fullName.length<6){
+                    alert("name should be greater tha 6 char")
+                }
+                else if(password != cpassword){
+                    alert("password not matched")
+                }
+                else{
+                    alert("form Success")
+                    localStorage.setItem("FullName",fullName)
+                    localStorage.setItem("email",emailId)
+                    localStorage.setItem("password",password)
+                    localStorage.setItem("confirmpassword",cpassword)
+                }
+            }
+            
+
+
+            //storages
+            // 2 types of storages
+            //1.local storage  -- manually we need to delete the data
+            //2.Session storage  -- automatically data will be deleted
+
+
+            //1.local storage
+            //2 items
+            //setItem()  -- we can store the data
+            //getItem() --- we can get the data
+            //clear() -- we can delete the data
+            //localStorage.clear()
+
+            //localStorage
+            //Syntax ==>  localStorage.setItem("key name","key values")
+
+            // localStorage.setItem("fullName","Ajay")
+            // localStorage.setItem("city","banglore")
+            // localStorage.setItem("State","KA")
+            // localStorage.setItem("contact",123456789)
+            // localStorage.setItem("Country","INDIA")
+
+            //localStorage.clear()
+
+            // let a=localStorage.getItem("contact")
+            // document.write(a)
+            // document.write("<br>")
+            // let b=localStorage.getItem("fullName")
+            // document.write(b)
+            // document.write("<br>")
+            // let c=localStorage.getItem("Country")
+            // document.write(c)
+            // document.write("<br>")
+
+
+            //2.Session storage
+            //2 items
+            //setItem()---  for storing data
+            //getItem()---  for getting data
+
+            //Syntax ==> Sessionstorage.setItem("keyname",keyvalue)
+
+            // sessionStorage.setItem("id",1)
+            // sessionStorage.setItem("Book","javaScript")
+            // sessionStorage.setItem("Author","jhon")
+
+
+            // let d=sessionStorage.getItem("id")
+            // document.write(d)
+            // let e=sessionStorage.getItem("Book")
+            // document.getItem(e)
+
+            //Form validation
+            //UserName ==> the username >6
+
+            //password and Confirm password --> matching ---> show Success 
+            //password doesnot match
+
+        </script>
+    </body>
+</html>

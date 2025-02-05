@@ -1,0 +1,67 @@
+<!--In css there are 3 ways to write the code:1.Inline css code,
+2.Internal css code,
+3.External css code
+Inline .....<h1 style="styling"
+Internal.....<head>
+    <style>
+    </style>
+</head>
+
+External --#style.css <>.....index.html
+-->
+<!--max width:100%
+
+css selectors: 3 types:
+1.ID selector.......indicated by #
+2.class selector.....indicated by .
+3.tag selector.....indicated by tags-->
+<html>
+    <head><!--internal css-->
+        <style>
+            #myid{
+                background-color: brown;
+                color:white;                               
+                padding:50px;
+                text-align:center;
+                width:400px;
+                margin-bottom:100px;
+            }
+            .myclass{
+                background-color: blue;
+                color:wheat;
+                padding:60px;
+                width:400px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:aquamarine;
+        color:black;padding:100px"><!--padding is used to get the space inside the container-->
+            <h1>Frontend..!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div style="background-color:aqua;color:black;padding-top:200px;padding-right:50px;padding-left:50px;padding-bottom:100px">
+            <h1>Frontend....!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div style="background-color:blue;color:white;
+        padding:100px;
+        margin:100px;
+        width:200px;
+        height:200px;
+        text-align:center;"
+        ><!--margin properties:margin-top,margin-bottom,margin-right,margin-left-->
+            <h1 style="background-color: red;padding:20px;text-align:center;">Frontend...!</h1><!--margin is used to get the space outside the block-->
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div id="myid">
+            <h1>frontend..!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="myclass">
+            <h1>Backend..!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </body>
+</html> 

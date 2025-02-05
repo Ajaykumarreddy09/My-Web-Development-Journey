@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/073f66530f.js"
+        crossorigin="anonymous"></script>
+        <style>
+            div{
+                background-color: aqua;
+                height: 200px;
+                width: 200px;
+                transition: width 4s,height 4s,background-color 5s, transform 5s,border-radius 5s;
+            }
+            div:hover{
+                width: 500px;
+                height:500px;
+                background-color: brown;
+                transform: rotate(360deg);
+                border-radius: 50%;
+                /* transform: rotate(-360deg);    --- for anti-clock wise rotation*/
+            }
+            section{
+                background-color: blueviolet;
+                height: 450px;
+                width:100%;
+                animation: hello 10s infinite;
+                /* animation-name: hello;
+                animation-duration: 10s; */
+            }
+            @keyframes hello{
+                20%{
+                    background-color: blue;
+                }
+                40%{
+                    background-color: burlywood;
+                }
+                60%{
+                    background-color: chartreuse;
+                }
+                80%{
+                    background-color: chocolate;
+                }
+                100%{
+                    background-color: darkcyan;
+                }
+            }
+            main{
+                background-image: url("https://th.bing.com/th/id/OIP.zvTH42gSclJtNydj25IWbAHaE7?rs=1&pid=ImgDetMain");
+                height:100%;
+                width: 100%;
+                background-size: cover;
+                animation: hi 15s infinite;
+            }
+            @keyframes hi{
+                20%{
+                    background-image: url("https://th.bing.com/th/id/R.ef99528fe6485e0fe578a568ed19c538?rik=YoV6fCIa3B65mw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2f0%2fd%2f820810-full-hd-nature-wallpapers-2560x1600-screen.jpg&ehk=vIysebK27uH7%2bAO1A5rcQ1tRNlaayL98VI%2b1tyfJCAE%3d&risl=&pid=ImgRaw&r=0");
+                }
+                40%{
+                    background-image: url("https://th.bing.com/th/id/OIP.U0SfqHcCr4A3TEW4cIDGOQHaEI?w=4000&h=2236&rs=1&pid=ImgDetMain");
+                }
+                60%{
+                    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Desktop-landscape-wallpaper-HD-1.jpg");
+                }
+            }
+            article{
+                display: None;
+            }
+            aside:hover article{
+                display: Block;
+            }
+        </style>
+    </head>
+    <body>
+        <!--transition-----it takes some time limit to execute an action-->
+        <!--Transform--for rotating -->
+        <!--Animations 2 properties
+        animation name
+        animation durationo--10s-->
+        <div>
+        </div>
+        <section>
+        </section>
+        <main>
+        </main>
+        <br><br><br>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="font-size: 100px;color: blue;"></i></a>
+        <i class="fa-brands fa-twitter" style="font-size: 100px;color:aqua"></i>
+        <!-- <select>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Full stack</option>
+        
+
+            Disable--none
+            enable--Block
+        </select> -->
+        <aside>
+            <p>Courses</p>
+            <article>
+                <p>Frontend</p>
+                <p>Backend</p>
+            </article>
+            
+        </aside>
+    </body>
+</html>

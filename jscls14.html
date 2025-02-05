@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OOPS -- Object Oriented Programming System
+        //1.class -- collection of objects is called class
+        //2.Method -- it is a function which is used to access the instance of the variables  
+        //3.Inheritance -- one class derived from another class.
+        //callback()-- one function passed into another function as an argument--we have parent and child function
+
+        //4.polymorphism -- same object with different behaviour.-->poly means more, morphism means shape
+        //5.Encapsulation -- wrapping the data in single unit.
+        //2 methods: 
+        //1.Getter() -- wrap the data
+        // 2.Setter() -- fetch the data
+        //6.Data abstraction -- hiding the data
+        //only applicable for java and python.
+
+        //Constructor() --> it is a function. it creates instance of variables known as objects.
+        //only applicable for classes
+
+        // function myname(name,city,state,country,contact){
+        //     this.a=name  //instance of variables  //-- format-->{keyname:keyvalues} 
+        //     this.b=city
+        //     this.c=state
+        //     this.d=country
+        //     this.e=contact
+
+        //     this.myfunction=function(){
+        //         let x=`name:${this.a}\ncity:${this.b}\nstate:${this.c}\ncountry:${this.d}\ncontact:${this.e}`
+        //         console.log(x)
+        //     }
+        // }
+        // let x=myname("Ajay","banglore","KA","IN",123)
+        // myfunction(x)
+
+
+        //syntax
+        //class name{
+        //constructor(){}
+        //}
+
+        class myname{
+            constructor(name,city,state,country,constact){
+                this.a=name
+                this.b=city
+                this.c=state
+                this.d=country
+                this.e=contact
+            }
+            myDisplay=function(){
+                let x=`name:${this.a}\ncity:${this.b}\nstate:${this.c}\ncountry:${this.d}\ncontact:${this.e}`
+                console.log(x)
+            }
+        }
+        let obj1=myname("ajay","banglore","KA","IN",123)
+        myDisplay(obj1)
+
+    </script>
+</body>
+</html>

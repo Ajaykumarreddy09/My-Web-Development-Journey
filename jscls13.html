@@ -1,0 +1,140 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        //Higher order funtion
+            //Higher order function--- one function operates that on another function is the higher order function.
+            
+            // function myName(name){
+            //     return function(city){
+            //         return "myname is "+ name+" iam from "+city
+            //     }
+            // }
+            // obj=myName("Ajay")
+            // console.log(obj("Banglore"))
+
+            //Self invoking function --- in single parent function we are merging multiple arguments
+
+            // function myName1(a){
+            //     return function(b){
+            //         return a+b
+            //     }            
+            // }
+            // obj1=myName1(3)(3)
+            // console.log(obj1)
+
+            //Rest parameter -- in single parameter we can merge n number of arguments
+            //rest parameter is indicated by   ...   thriple dot
+            
+            // function mydetails(name,...city){
+            //     let x=`name:${name}\ncity:${city}`
+            //     console.log(x)
+            // }
+            // mydetails("Ajay","banglore","mumbai")
+
+
+            // function mynumber(...n){
+            //     let x=`number:${n}`
+            //     console.log(x)
+            // }
+            // mynumber(1,2,3,4,5,6,7,8,9,10)
+
+
+            //Spread operator
+            //condition  -- when condition is success then only we can send the data or add the data
+            //indicated by----(...)
+
+            //concat is one method to merge two variables
+
+            // let a=[1,2,3,4,5]
+            // let b=[6,7,8,9,10]
+            // let r=a.concat(b)
+            // console.log(r)
+
+
+            //merging through spread operator
+
+            // let a=[1,2,3,4,5]
+            // let b=[6,7,8,9,10]
+            // console.log(...a,...b)
+
+            //condition -- success -- failure 
+
+
+            // let c=100
+            // let d=200
+            // let e=c>d?true:false
+            // let obj3={
+            //     name:"Ajay",
+            //     city:"Banglore",
+                
+            //     ...(
+            //         e && {
+            //     state:"KA",
+            //     country:"IN"
+            //         }
+            //     )
+            // }
+            // console.log(obj3)
+
+            // let c=100
+            // let d=200
+            // let e=c<d?true:false
+            // let obj3={
+            //     name:"Ajay",
+            //     city:"Banglore",
+                
+            //     ...(
+            //         e && {
+            //     state:"KA",
+            //     country:"IN"
+            //         }
+            //     )
+            // }
+            // console.log(obj3)
+
+
+            //parseInt()
+            //JSON -- javascript object notation
+            //which is used to interchange the data from one server to another server
+
+            //JSON.stringify() -- used to convert number to string.
+            //JSON.parse() -- which is used to convert string to numbers
+
+            // let B={
+            //     a:1,
+            //     b:2,
+            //     c:3,
+            //     d:4,
+            //     e:5,
+            //     f:6
+            // }
+            // console.log(B)
+            // let c=JSON.stringify(B)
+            // console.log(c)
+            // console.log(typeof(c))
+            // let d=JSON.parse(c)
+            // console.log(d)
+
+
+            //Math function()
+            //Round()---- takes float values..if value is less than .5 we are getting min value...if value is greater than .5 we are getting max value
+            // let a=Math.round(3.5)
+            // console.log(a)
+            // let b=Math.round(3.4)
+            // console.log(b)
+            // let c=Math.round(3.6)
+            // console.log(c)
+
+            //Min()
+            // let a1=Math.min(1,2,3,4,5,6,7,12,4)
+            // console.log(a1)
+            //Max()
+            // let a2=Math.max(1,2,3,4,5,6,7,12,4)
+            // console.log(a2)
+
+        </script>
+    </body>
+</html>

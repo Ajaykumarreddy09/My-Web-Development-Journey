@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Count:<span id="data">0</span></h1>
+        <button onclick="incdata()">INCREMENT</button>
+        <button onclick="decdata()">DECREMENT</button>
+        <button onclick="resetdata()">RESET</button>
+        <button onclick="myalert()">Alert</button>
+        <button id="add1">Add</button>
+        <button id="btn2">UPDATE</button>
+        <button id="inc1">INCREMENT1</button>
+        <button id="dec">DECREMENT1</button>
+        <h1 id="head"><span></span></h1>
+        <script>
+            //Increment,decrement,reset
+            //parseint ------ used to convert string datatype to number datatype
+
+            function incdata(){
+                let x=document.getElementById("data").innerHTML   
+                let y=parseInt(x)+1  //parseint ------ used to convert string datatype to number datatype
+                document.getElementById("data").innerHTML=y
+                                        
+            }
+            function decdata(){
+                let x=document.getElementById("data").innerHTML
+                let y=parseInt(x)-1
+                document.getElementById("data").innerHTML=y
+            }
+            function resetdata(){
+                let x=document.getElementById("data").innerHTML=0
+            }
+
+            //event listners
+            //2 types:
+            //1.addEventlistner()----attacheventlisner
+            //2.removeEventListner()-----detacheventlistner
+
+
+
+             //1.addEventlistner()----attacheventlisner
+            //syntax
+            
+            //addEventListener("event",any one function(){})
+
+            let a=document.getElementById("add1")
+            a.addEventListener("click",function name(){
+                let x=document.getElementById("head").innerHTML="hello good morning"
+            })
+
+            let b=document.getElementById("btn2")
+            b.addEventListener("click",function name1(){
+                let x=document.getElementById("head").innerHTML="Besant tech"
+            })
+
+
+            let c=document.getElementById("inc1")
+            c.addEventListener("click",function inc(){
+                let x=document.getElementById("data").innerHTML
+                let y=parseInt(x)+1
+                document.getElementById("data").innerHTML=y
+            
+            })
+
+            let d=document.getElementById("dec")
+            d.addEventListener("click",function dec(){
+                x=document.getElementById("data").innerHTML
+                y=parseInt(x)-1
+                document.getElementById("data").innerHTML=y
+            })
+
+            function myalert(){
+                alert("Hello....")
+            }
+
+            // function myapp(){
+            //     let x=document.getElementById("head").innerHTML="Adding content"
+            // }
+
+        </script>
+    </body>
+</html>

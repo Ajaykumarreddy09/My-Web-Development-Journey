@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <form onsubmit="pattern()">
+            <input type="text" id="a">
+            <input type="submit">
+            <div id="print"></div>
+        </form>
+        <script>
+            function pattern(){
+                event.preventDefault()
+                let input=document.getElementById("a").value
+                let pat=/^[a-z]+$/
+                let res=pat.test(input)
+
+                let x=document.getElementById("print")
+                if (res==true){
+                    x.textContent="It is valid"
+                    x.style.color="green"
+                }
+                else{
+                    x.textContent="its invalid"
+                    x.style.color="red"
+                }
+            }
+        </script>
+    </body>
+</html>

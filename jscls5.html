@@ -1,0 +1,185 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //Annonymous function--only used locally
+
+            //callBack() -- one function passed into another function as an argument
+         
+
+            //normal way of calling
+            // function myapp(){
+            //     console.log("1 st Function")
+            // }
+            // function myapp2(){
+            //     console.log("2nd function")
+            // }
+            // function myapp3(){
+            //     console.log("3rd function")
+            // }
+            // function myapp4(){
+            //     console.log("4th function")
+            // }
+            // myapp()
+            // myapp2()
+
+            // using callBack()
+
+            // function myapp(){
+            //     console.log("1 st Function")
+            // }
+            // function myapp2(){
+            //     console.log("2nd function")
+            // }
+            // function myapp3(a,b){
+            //     console.log("3rd function")
+            //     a()//---callBack function
+            //     b()
+            // }
+            // function myapp4(){
+            //     console.log("4th function")
+            // }
+            // myapp3(myapp,myapp4)
+            
+
+            // function myapp(x){
+            //     console.log("1 st Function"+x)
+            // }
+            // function myapp2(y){
+            //     console.log("2nd function"+y)
+            // }
+            // function myapp3(a,b,c){
+            //     console.log("3rd function")
+            //     a("Html")//---callBack function
+            //     b("CSS")
+            //     c("javascript")
+            // }
+            // function myapp4(z){
+            //     console.log("4th function"+z)
+            // }
+            // myapp3(myapp,myapp2,myapp4)
+
+            //setTimeout--takes some time to excecute the code/function.
+
+            // setTimeout(any one function(){},
+            //     time limit)
+            //1000--1second
+            //10000--10s
+
+           
+        //    setTimeout(function myname(){
+        //     alert("Hello......")
+        //    },5000)
+
+        // setTimeout(function myname(){
+        //     console.log("Frontend....")
+        //    },2000)
+        //    setTimeout(()=>{
+        //     console.log("Backend....")
+        //    },3000)
+
+        //    setTimeout(function(){
+        //     console.log("Full stack")
+        //    },4000)
+
+
+
+            //set interval--takes some time to excecute code repeatedly.
+            //syntax--
+            //setInterval(any function(){},time limit)
+
+            // setInterval(()=>{
+            //     console.log("Ajay...")
+            // },3000)
+
+           //Arrow function
+           //Global syntax
+           //const myapp=()=>{
+           //}
+
+           //locally-- synatx--- ()=>{}
+
+            //   let obj={
+            //       name:"gdv",
+            //       city:"hhds",
+            //       state:"hcbshjbj"
+            //     }
+            //     console.log(obj)
+            //     // let a=JSON.stringify(obj)
+            //     console.log(a)
+
+            //     console.log(JSON.parse(a))
+
+
+            //  Global variable or Global scope  - declaring outside the function, global variable we can access any where in the program 
+
+                // Local variable or Local scope    - inside the function 
+
+
+                // Global variable
+                
+                // let a="vgvh"   
+                // function data(){
+                  
+
+                // }
+                // data()
+                // console.log(a)
+
+
+                // function local(){
+                //   let a=8
+                //   console.log(a)
+                 
+                // }
+                // local()
+
+                
+
+             let a=8 // global
+                function helo(){
+                  
+
+                    let b=6 // non-local variable 
+                  function hai(){
+                    
+
+                       let c=78 //
+
+                      function bye(){
+                       
+
+                      }
+                      bye()
+                      console.log(b)
+
+                  }
+                  hai()
+                  //console.log(c)
+
+
+                }
+                helo()
+
+
+
+           //sync function-- the code will execute step by step 
+
+
+
+           //async function-- it will not wait for any statement, automatically it go for next statement
+           //await()--- to hold the function
+
+           //promises--handles the async functions it takes 2 arguments 
+           //1.resolve
+           //2.reject
+           //when the promises are fullfilled we are getting success statement
+           //when the promises is failure we are gettinng reject
+
+           //then()-- resolve -- success
+           //catch() -- reject--used to handle the promises errors
+            
+
+        </script>
+    </body>
+</html>

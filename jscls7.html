@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <style>
+            .k{
+                background-color: blueviolet;
+                color: white;
+                padding: 40px;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+<!-- 
+        <div id="myid">
+            <h1>frontend</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, dolore.</p>
+        </div>
+        <div class="myclass">
+            <h1>Backend</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam.</p>
+        </div> -->
+
+        <button onclick="myAlert()">Alert</button>
+        <button onclick="myadd()">Add</button>
+    
+        <button onclick="myupdate()">Update</button>
+        <button onclick="mydelete()">Delete</button>
+        <button onclick="myshow()">Show</button>
+        <h1 id="data">Hello<span id="myid"></span></h1>
+
+        <script>
+
+            /* let a=document.getElementById("myid")
+            a.style.backgroundColor="red"
+            a.style.color="white"
+            a.style.padding="20px"
+            a.style.fontFamily="cursive"
+
+            let b=document.querySelectorAll(".myclass")
+            b.classList.add("k") */
+
+
+            function myadd(){
+                let x=document.getElementById("myid").innerHTML="Besant tech"
+                let a=document.getElementById("myid")
+                a.style.color="red"
+            }
+            function myAlert(){
+                alert("Hello....")
+            }
+
+            // function myupdate(){
+            //     let b=document.getElementById("myid").innerHTML="Ajay"
+            //     let y=document.getElementById("myid")
+            //     y.style.color="blue"
+            // }
+            function myupdate(){
+                let b=document.getElementById("myid").innerHTML="Ajay"
+                let y=document.getElementById("data")
+                y.style.color="blue"
+            }
+
+            function mydelete(){
+                let x=document.getElementById("data")
+                x.style.display="none"
+            }
+
+            function myshow(){
+                let x=document.getElementById("data")
+                x.style.display="block"
+
+            }
+
+/// Accessing by id
+            // let a= document.getElementById("myid")
+            // console.log(a)
+
+            //inner html
+            // let a= document.getElementById("myid").innerHTML
+            // console.log(a)
+
+            //inner text
+            // let a= document.getElementById("myid").innerText
+            // console.log(a)
+
+ /// Accessing by class
+
+            // let b=document.getElementsByClassName(".myclass")
+            // console.log(b)
+
+/// Accessing by tag
+
+            // let a=document.getElementsByTagName("h1")
+            // console.log(a)
+
+/// Accessing by query selector
+            //  let a=document.querySelector("#myid")
+            //  console.log(a)
+
+            //  let b=document.querySelector(".myclass")
+            //  console.log(b)
+
+            //  let c=document.querySelector("div")
+            //  console.log(c)
+
+// Accessing by queryselectorall
+
+            //  let d=document.querySelectorAll("div")
+            //  console.log(d)
+
+
+            //DOM -- Stands for document Object Model
+            //DOM -- Html--- used to access the html elements in javascript
+            //selectors
+            //5 types of selectors :
+            //1.id selector
+            
+            //document.getElementById("id name") 
+
+            //2.class selector
+
+           // document.getElementsByClassName("class name")
+
+            //3.tag selectors
+
+           // document.getElementsByTagName("Tag names")
+          
+            //4.query selector
+            // we can access id ,class,tag in query selector
+
+            // document.querySelector("#id name")
+            // document.querySelector(".class name")
+            // document.querySelector("tag name")
+
+            //5.query all selector
+            // when  there are 2 block elements with same name it will only select first one so in order to select both we use queryall selector
+            //div --item
+            //div --item  
+
+            // document.querySelectorAll("#id name")
+
+            // document.querySelectorAll(".class name")
+
+            // document.querySelectorAll("Tag name")
+
+
+            //DOM -- CSS
+            //a.style.backgroun="red"
+            //a.classlist.add("")
+            //a.classlist.remove("")
+
+            ////Events --- are handling the function
+            //function-- set of statement that perform specific task
+
+
+            //onclick() -- when we click the thing then only we can execute the function
+
+            //go to body
+
+            //ondblclick()-- when we click button 2 times then only we can executing the function
+
+            //onmouseover()-- when the cursor is moving to particular section then action is executed.
+
+            //onmouseout()
+            //onkeypress()
+            //onkeyup()
+            //onsubmit()
+            
+            
+        </script>
+    </body>
+</html>

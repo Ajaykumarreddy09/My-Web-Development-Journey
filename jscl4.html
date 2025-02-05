@@ -1,0 +1,120 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <script>
+            //functions:-- functions are
+            //Normal functions 
+
+            //syntax
+
+            //function functionname(){
+            //statement 
+            //code }
+            //functionname()
+
+            // function myname(){
+            //     alert("Hello....")
+            // }
+            // myname()
+
+            //objects--keyname,keyvalue
+
+            //functions--parameters arguments
+
+            // function myname(parameters){
+            //     alert("Hello....")
+            // }
+            // myname(arguments)
+
+
+            // function myname(name,city){
+            //     let x="My name is "+name+" Iam from "+city
+            //     console.log(x)
+            // }
+            // myname("Ajay","Banglore")
+
+            // function myfunc(name,city,state,country){
+            //     let x=`name:${name}\ncity:${city}\nstate:${state}\ncountry:${country}`
+            //     console.log(x)
+            // }
+            // myfunc("Ajay",'banglore','KA','India')
+
+
+            //Arrow functions
+
+            //synatx
+
+            //const myfunction=()=>{
+            //code
+            //}
+            //myfunction()
+
+            // const myfunction=(id,book,author)=>{
+            //     let x=`id:${id}\nbook:${book}\nauthor:${author}`
+            //     console.log(x)
+            // }
+            // myfunction(1,"GOT","martin")
+
+            // let obj={
+            //     name:"Ajay",
+            //     age:21,
+            //     city:"Banglore",
+            //     myName1:function(state,country,id){
+            //         let x=`name:${this.name}\nage:${this.age}\ncity:${this.city}\n state:${state} \n country:${country} \n id:${id}`
+            //         console.log(x)
+            //     }      
+            // }
+
+
+            //call()
+
+            let obj={
+                name:"Ajay",
+                city:"Banglore",
+                myName1:function(state,country,id){
+                    let x=`name:${this.name}\ncity:${this.city}\n state:${state} \n country:${country} \n id:${id}`
+                    console.log(x)
+                }      
+            }
+            obj.myName1("KA","INDIA",1)
+
+            let obj1={
+                name:"Ajay",
+                City:"Banglore"
+            }
+            obj.myName1.call(obj1,"KA","IN",1)
+
+            //Apply()--args should be passed as an array
+
+            let obj2={
+                name:"Aj",
+                city:"Banglore"
+            }
+            obj.myName1.apply(obj2,["KA","IN",2])
+            
+            //Bind()--create new function and its return function
+
+            let obj3={
+                name:"vijay",
+                city:"banglore"
+            }
+            let r=obj.myName1.bind(obj3)
+            r("AP","IN",3)
+            //used to access outside the object parameters.
+
+            //function name(){}
+            //{
+            //key name: key value
+            //functionName:function(){}
+            //}
+            //Annonymous function--only used locally 
+
+            //synatx
+
+            //function(){
+            //}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html></html>
+    <head></head>
+    <body>
+        <h1><center>Registration-Form</center></h1>
+        <form onsubmit="myregister()" style="text-align: center;">
+            <label>Name</label>
+            <input type="text" id="name"><br><br>
+            <label>Email</label>
+            <input type="text" id="email"><br><br>
+            <label>password</label>
+            <input type="password" id="pswd"><br><br>
+            <label>cpassword</label>
+            <input type="password" id="cpswd"><br><br>
+            <button>register</button>
+        </form>
+        
+        <script>
+
+            function myregister(){
+                let a=document.getElementById("name").value
+                let b=document.getElementById("email").value
+                let c=document.getElementById("pswd").value
+                let d=document.getElementById("cpswd").value
+
+                if(a.length<6){
+                    alert("Name should be above 6 characters")
+                }
+                else if(c != d){
+                    alert("Password doesnot match")
+                }
+                else{
+                    alert("Form Succcess")
+                    localStorage.setItem("Full Name",a)
+                    localStorage.setItem("Email",b)
+                    localStorage.setItem("pswd",c)
+                    localStorage.setItem("cpswd",d)
+                }
+            }
+            //localStorage.clear()
+        </script>
+    </body>
+</html>

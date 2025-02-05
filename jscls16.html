@@ -1,0 +1,71 @@
+<html>
+    <head></head>
+    <body>
+        <h1><center>Registration-Form</center></h1>
+        <form onsubmit="myregister()" style="text-align: center;">
+            <label>Name</label>
+            <input type="text" id="name"><br><br>
+            <label>Email</label>
+            <input type="text" id="email"><br><br>
+            <label>password</label>
+            <input type="password" id="pswd"><br><br>
+            <label>cpassword</label>
+            <input type="password" id="cpswd"><br><br>
+            <button>register</button>
+        </form>
+        <form onsubmit="myregistration1()" style="text-align: center;"></form>
+            <label>Name</label>
+            <input type="text" id="name1"><br><br>
+            <label>Email</label>
+            <input type="text" id="email1"><br><br>
+            <label>password</label>
+            <input type="password" id="pswd1"><br><br>
+            <label>cpassword</label>
+            <input type="password" id="cpswd1"><br><br>
+            <button>register</button>
+        </form>
+        
+        <script>
+
+            function myregister(){
+                let a=document.getElementById("name").value
+                let b=document.getElementById("email").value
+                let c=document.getElementById("pswd").value
+                let d=document.getElementById("cpswd").value
+
+                if(a.length<6){
+                    alert("Name should be above 6 characters")
+                }
+                else if(c != d){
+                    alert("Password doesnot match")
+                }
+                else{
+                    alert("Form Succcess")
+                    localStorage.setItem("Full Name",a)
+                    localStorage.setItem("Email",b)
+                    localStorage.setItem("pswd",c)
+                    localStorage.setItem("cpswd",d)
+                }
+            }
+            function myregistration1(){
+                let a1=document.getElementById("name1").value
+                let b1=document.getElementById("email1").value
+                let c1=document.getElementById("pswd1").value
+                let d1=document.getElementById("cpswd1").value
+
+                localStorage.getItem("Full Name",a)
+                localStorage.getItem("Email",b)
+                localStorage.getItem("pswd",c)
+                localStorage.getItem("cpswd",d)
+
+                if(a1==a && b1==b && c1==c && d1==d){
+                    alert("form success")
+                }
+                else{
+                    alert("Credentials doesnot match")
+                }
+            }
+            //localStorage.clear()
+        </script>
+    </body>
+</html>
